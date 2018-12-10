@@ -7,16 +7,42 @@
     width: 1200px;
 }
 
+.carousel {
+    background: #eee;
+}
+
 .carousel-cell {
     width: 100%;
     /* full width */
     height: 160px;
     /* height of carousel */
     margin-right: 10px;
+    overflow: hidden;
 }
 
 .carousel-cell img {
     width: 200px;
     height: auto;
     display: block;
+}
+
+/* no circle */
+.flickity-button {
+    background: transparent;
+}
+
+/* big previous & next buttons */
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+}
+
+/* icon color */
+.flickity-button-icon {
+    fill: white;
+}
+
+/* hide disabled button */
+.flickity-button:disabled {
+    display: none;
 }
