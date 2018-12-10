@@ -1,5 +1,5 @@
 {
-  "name": "projekt-indywidualny",
+  "name": "places-to-visit",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -23,7 +23,9 @@
   "author": "",
   "browserslist": [],
   "license": "",
-  "dependencies": {},
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.3",
