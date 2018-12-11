@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Places I'd like to visit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="vendor/flickity.min.css">
@@ -13,19 +14,36 @@
 </head>
 
 <body>
-    <div class="carousel">
-        <div class="carousel-cell"><img src="images/egypt.jpg" alt="egypt"></div>
-        <div class="carousel-cell"><img src="images/australia.jpg" alt="australia"></div>
-        <div class="carousel-cell"><img src="images/japan.jpg" alt="japan"></div>
-        <div class="carousel-cell"><img src="images/machu picchu.jpg" alt="machu picchu"></div>
-        <div class="carousel-cell"><img src="images/new york.jpg" alt="new york"></div>
+
+    <div class="main-carousel">
+        <div class="carousel-cell" id="carousel-cell1" style="background-image:url(images/egypt.jpg)">
+            <div class="container"><span class="title">Egypt</span></div>
+        </div>
+        <div class="carousel-cell" id="carousel-cell2" style="background-image:url(images/australia.jpg)">
+            <div class="container"><span class="title">Australia</span></div>
+        </div>
+        <div class="carousel-cell" id="carousel-cell3" style="background-image:url(images/japan.jpg)">
+            <div class="container"><span class="title">Japan</span></div>
+        </div>
+        <div class="carousel-cell" id="carousel-cell4" style="background-image:url(images/machu-picchu.jpg)">
+            <div class="container"><span class="title">Machu Picchu</span></div>
+        </div>
+        <div class="carousel-cell" id="carousel-cell5" style="background-image:url(images/new-york.jpg)">
+            <div class="container"><span class="title">New York</span></div>
+        </div>
+
+
     </div>
-
-
-
+    <p>
+        <a href="#carousel-cell1">View cell 1</a>
+        <a href="#carousel-cell2">View cell 2</a>
+        <a href="#carousel-cell3">View cell 3</a>
+        <a href="#carousel-cell4">View cell 4</a>
+        <a href="#carousel-cell5">View cell 5</a>
+    </p>
 
     <script src="vendor/flickity.pkgd.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

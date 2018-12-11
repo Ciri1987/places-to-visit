@@ -5,25 +5,50 @@
 
 .container {
     width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
-.carousel {
-    background: #eee;
+.main-carousel {
+    background: #f7f2e3;
+    margin-top: 20px;
 }
 
 .carousel-cell {
+    display: flex;
+    justify-content: center;
     width: 100%;
     /* full width */
-    height: 160px;
+    height: 600px;
     /* height of carousel */
-    margin-right: 10px;
+    margin-right: 20px;
     overflow: hidden;
+    background-size: cover;
 }
 
 .carousel-cell img {
-    width: 200px;
-    height: auto;
-    display: block;
+
+    height: 100%;
+    max-height: auto;
+
+}
+
+.title {
+    font-size: 50px;
+    font-family: 'Bungee Inline', cursive;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px white;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: grey;
+
 }
 
 /* no circle */
@@ -34,12 +59,12 @@
 /* big previous & next buttons */
 .flickity-prev-next-button {
     width: 100px;
-    height: 100px;
+    height: 150px;
 }
 
 /* icon color */
 .flickity-button-icon {
-    fill: white;
+    fill: grey;
 }
 
 /* hide disabled button */
