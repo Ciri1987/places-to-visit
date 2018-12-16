@@ -1,7 +1,7 @@
 {
   "name": "places-to-visit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Kodilla project",
   "main": "index.js",
   "scripts": {
     "test": "npm-run-all test:*",
@@ -40,6 +40,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ciri1987/project-1.git"
+    "url": "git+https://github.com/Ciri1987/places-to-visit.git"
   }
 }
