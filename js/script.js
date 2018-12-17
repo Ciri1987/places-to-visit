@@ -1,3 +1,5 @@
+'use strict';
+
 var elem = document.querySelector('.main-carousel');
 var progressBar = document.querySelector('.progress-bar');
 var buttonGroup = document.querySelector('.button-group');
@@ -11,6 +13,21 @@ var flkty = new Flickity(elem, {
     contain: true,
     hash: true,
 });
+
+
+// mustache
+
+var templateSlide = document.getElementById('template-carousel').innerHTML;
+var carousel = document.querySelector('.main-carousel');
+
+Mustache.parse(templateSlide);
+var renderedTemplates = '';
+
+for (var i = 0; i < data.length; i++) {
+    renderedTemplates += Mustache.render(templateSlide, data[i]);
+}
+carousel.innerHTML = renderedTemplates;
+
 
 // Use progress bar scroll
 

@@ -15,7 +15,8 @@
 
 <body>
 
-    <div class="main-carousel">
+    <div class="main-carousel"></div>
+    <!--   <div class="main-carousel">
         <div class="carousel-cell" id="carousel-cell1" style="background-image:url(images/egypt.jpg)">
             <div class="container"><span class="title">Egypt</span></div>
         </div>
@@ -32,19 +33,53 @@
             <div class="container"><span class="title">New York</span></div>
         </div>
     </div>
+-->
+    <script id="template-carousel" type="x-tmpl-mustache">
+        <div class="carousel-cell" style="background-image: url({{image}})">
+      <div class="container">
+        <h2>{{title}}</h2>
+        {{{description}}}
+      </div>
+    </div>
+  </script>
 
+    <script>
+        var data = [{
+                title: 'Egypt',
+                description: '<p>Lorem ipsum</p>',
+                image: 'images/egypt.jpg',
+
+            },
+            {
+                title: 'Australia',
+                description: '<p>Lorem ipsum</p>',
+                image: 'images/australia.jpg',
+
+            },
+            {
+                title: 'China',
+                description: '<p>Lorem ipsum</p>',
+                image: 'images/china.jpg',
+
+            },
+            {
+                title: 'Machu Picchu',
+                description: '<p>Lorem ipsum</p>',
+                image: 'images/machu-picchu.jpg',
+            },
+            {
+                title: 'New York',
+                description: '<p>Lorem ipsum</p>',
+                image: 'images/new-york.jpg',
+            }
+        ];
+    </script>
     <div class="progress-bar"></div>
     <div class="button-group">
         <button class="restart-button" data-selector=".restart">Restart</button>
     </div>
-    <p>
-        <a href="#carousel-cell1">View cell 1</a>
-        <a href="#carousel-cell2">View cell 2</a>
-        <a href="#carousel-cell3">View cell 3</a>
-        <a href="#carousel-cell4">View cell 4</a>
-        <a href="#carousel-cell5">View cell 5</a>
-    </p>
 
+    <script src="vendor/mustache.js"></script>
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="js/script.js"></script>
 </body>
