@@ -3,7 +3,7 @@
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -27,18 +27,12 @@
   height: 800px;
   /* height of carousel */
   margin-right: 20px;
-  overflow: hidden;
   background-size: cover;
   font-size: 30px;
   font-family: 'Bungee Inline', cursive;
   text-transform: uppercase;
   text-shadow: 1px 1px 15px white;
   letter-spacing: 2px;
-}
-
-.carousel-cell img {
-  height: 100%;
-  width: 100%;
 }
 
 /* no circle */
@@ -62,15 +56,8 @@
   display: none;
 }
 
-a {
-  text-decoration: none;
-  font-size: 12px;
-  color: grey;
-  margin-left: 20px;
-}
-
 .progress-bar {
-  height: 20px;
+  height: 15px;
   width: 0;
   background: #565553;
 }
@@ -81,11 +68,11 @@ a {
 
 .restart-button {
   position: relative;
-  left: 75.3em;
+  left: 10em;
   bottom: 2.5em;
   border: none;
   padding: 10px;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .restart-button:hover {

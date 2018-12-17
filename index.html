@@ -16,29 +16,12 @@
 <body>
 
     <div class="main-carousel"></div>
-    <!--   <div class="main-carousel">
-        <div class="carousel-cell" id="carousel-cell1" style="background-image:url(images/egypt.jpg)">
-            <div class="container"><span class="title">Egypt</span></div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell2" style="background-image:url(images/australia.jpg)">
-            <div class="container"><span class="title">Australia</span></div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell3" style="background-image:url(images/china.jpg)">
-            <div class="container"><span class="title">China</span></div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell4" style="background-image:url(images/machu-picchu.jpg)">
-            <div class="container"><span class="title">Machu Picchu</span></div>
-        </div>
-        <div class="carousel-cell" id="carousel-cell5" style="background-image:url(images/new-york.jpg)">
-            <div class="container"><span class="title">New York</span></div>
-        </div>
-    </div>
--->
+
     <script id="template-carousel" type="x-tmpl-mustache">
         <div class="carousel-cell" style="background-image: url({{image}})">
       <div class="container">
         <h1>{{title}}</h1>
-        <p>{{{description}}}</p>
+        {{{description}}}
       </div>
     </div>
   </script>
@@ -46,31 +29,31 @@
     <script>
         var data = [{
                 title: 'Egypt',
-                description: '<p>Lorem ipsum</p>',
-                image: 'images/egypt.jpg',
+                description: '<p>Pyramids</p>',
+                image: 'images/egypt.jpg'
 
             },
             {
                 title: 'Australia',
-                description: '<p>Lorem ipsum</p>',
-                image: 'images/australia.jpg',
+                description: '<p>Sydney</p>',
+                image: 'images/australia.jpg'
 
             },
             {
                 title: 'China',
-                description: '<p>Lorem ipsum</p>',
-                image: 'images/china.jpg',
+                description: '<p>The Great Wall</p>',
+                image: 'images/china.jpg'
 
             },
             {
-                title: 'Machu Picchu',
-                description: '<p>Lorem ipsum</p>',
-                image: 'images/machu-picchu.jpg',
+                title: 'Peru',
+                description: '<p>Machu Picchu</p>',
+                image: 'images/machu-picchu.jpg'
             },
             {
                 title: 'New York',
-                description: '<p>Lorem ipsum</p>',
-                image: 'images/new-york.jpg',
+                description: '<p>Empire State Building</p>',
+                image: 'images/new-york.jpg'
             }
         ];
     </script>

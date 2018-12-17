@@ -1,16 +1,5 @@
 'use strict';
 
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity(elem, {
-    // options
-    imagesLoaded: true,
-    cellAlign: 'left',
-    pageDots: false,
-    contain: true,
-    hash: true,
-});
-
-
 // mustache
 
 var templateSlide = document.getElementById('template-carousel').innerHTML;
@@ -24,6 +13,15 @@ for (var i = 0; i < data.length; i++) {
 }
 carousel.innerHTML = renderedTemplates;
 
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity(elem, {
+    // options
+    imagesLoaded: true,
+    cellAlign: 'left',
+    pageDots: false,
+    contain: true,
+    hash: true,
+});
 
 // Use progress bar scroll
 
@@ -37,6 +35,7 @@ flkty.on('scroll', function (progress) {
 var buttonGroup = document.querySelector('.button-group');
 
 var buttons = buttonGroup.querySelectorAll('.restart-button');
+
 buttons = fizzyUIUtils.makeArray(buttons);
 buttonGroup.addEventListener('click', function (event) {
     // filter for button clicks
