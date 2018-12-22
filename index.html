@@ -22,6 +22,7 @@
       <div class="container">
         <h1>{{title}}</h1>
         {{{description}}}
+  
       </div>
     </div>
   </script>
@@ -30,30 +31,47 @@
         var data = [{
                 title: 'Egypt',
                 description: '<p>Pyramids</p>',
-                image: 'images/egypt.jpg'
-
+                image: 'images/egypt.jpg',
+                coords: {
+                    lat: 30.0138323,
+                    lng: 31.20957199999998
+                }
             },
             {
                 title: 'Australia',
                 description: '<p>Sydney</p>',
-                image: 'images/australia.jpg'
-
+                image: 'images/australia.jpg',
+                coords: {
+                    lat: -33.8688197,
+                    lng: 151.20929550000005
+                }
             },
             {
                 title: 'China',
                 description: '<p>The Great Wall</p>',
-                image: 'images/china.jpg'
-
+                image: 'images/china.jpg',
+                coords: {
+                    lat: 40.4319077,
+                    lng: 116.57037489999993
+                }
             },
             {
                 title: 'Peru',
                 description: '<p>Machu Picchu</p>',
-                image: 'images/machu-picchu.jpg'
+                image: 'images/machu-picchu.jpg',
+                coords: {
+                    lat: -13.1631412,
+                    lng: -72.54496289999997
+                }
             },
             {
                 title: 'New York',
                 description: '<p>Empire State Building</p>',
-                image: 'images/new-york.jpg'
+                image: 'images/new-york.jpg',
+                coords: {
+                    lat: 40.7485452,
+                    lng: -73.98576349999996
+                }
             }
         ];
     </script>
@@ -62,9 +80,14 @@
         <button class="restart-button" data-selector=".restart">Restart</button>
     </div>
 
+    <div id="map"></div>
+
+
     <script src="vendor/mustache.js"></script>
     <script src="vendor/flickity.pkgd.min.js"></script>
     <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlqdkoA4e9Eh3vyagKmy2X_LGabpldvtA&callback=initMap">
+    </script>
 </body>
 
 </html>

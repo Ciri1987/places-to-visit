@@ -45,3 +45,28 @@ buttonGroup.addEventListener('click', function (event) {
     var index = buttons.indexOf(event.target);
     flkty.select(index);
 });
+
+
+(function () {
+
+    window.initMap = function () {
+
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+                zoom: 6,
+                center: data[0].coords
+            });
+        var markers = [];
+        // add markers
+        for (var i = 0; i < data.length; i++) {
+            markers[i] = new google.maps.Marker({
+                position: data[i].coords,
+                map: map
+            });
+            markers[i].addListener('click', function () {
+
+            });
+        }
+
+    }
+})();
