@@ -1,29 +1,88 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-.container { max-width: 1200px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+.container {
+  max-width: 1200px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
 
-.main-carousel { background: #f7f2e3; margin-top: 20px; }
+.main-carousel {
+  background: #f7f2e3;
+}
 
-.carousel-cell { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; width: 100%; /* full width */ height: 800px; /* height of carousel */ margin-right: 20px; background-size: cover; font-size: 30px; font-family: 'Bungee Inline', cursive; text-transform: uppercase; text-shadow: 1px 1px 15px white; letter-spacing: 2px; }
+.carousel-cell {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  /* full width */
+  height: 700px;
+  /* height of carousel */
+  margin-right: 20px;
+  background-size: cover;
+  font-size: 30px;
+  font-family: 'Bungee Inline', cursive;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px white;
+  letter-spacing: 2px;
+}
 
 /* no circle */
-.flickity-button { background: transparent; }
+.flickity-button {
+  background: transparent;
+}
 
 /* big previous & next buttons */
-.flickity-prev-next-button { width: 100px; height: 100px; }
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
 
 /* icon color */
-.flickity-button-icon { fill: white; }
+.flickity-button-icon {
+  fill: white;
+}
 
 /* hide disabled button */
-.flickity-button:disabled { display: none; }
+.flickity-button:disabled {
+  display: none;
+}
 
-.progress-bar { height: 15px; width: 0; background: #565553; }
+.progress-bar {
+  height: 15px;
+  width: 0;
+  background: #565553;
+}
 
-.button-group { position: absolute; }
+.button-group {
+  position: absolute;
+}
 
-.restart-button { position: relative; left: 10em; bottom: 2.5em; border: none; padding: 10px; transition: 0.5s; }
+.restart-button {
+  position: relative;
+  left: 10em;
+  bottom: 2.5em;
+  border: none;
+  padding: 10px;
+  transition: 0.5s;
+}
 
-.restart-button:hover { background-color: #53afd3; border: none; color: #fff; transform: scale(1.3, 1.3); }
+.restart-button:hover {
+  background-color: #53afd3;
+  border: none;
+  color: #fff;
+  transform: scale(1.3, 1.3);
+}
 
-#map { width: 100%; height: 400px; }
+#map {
+  width: 100%;
+  height: 400px;
+}
+/*# sourceMappingURL=style.css.map */
